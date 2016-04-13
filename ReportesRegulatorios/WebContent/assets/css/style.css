@@ -1,0 +1,277 @@
+/*custom font de google
+    @import url(http://fonts.googleapis.com/css?family=Nunito);
+*/
+@font-face {
+    font-family: pro_cond;
+    src: url(../fonts/MYRIADPRO-COND.OTF);
+}
+
+@font-face {
+    font-family: pro_bold;
+    src: url(../fonts/MYRIADPRO-BOLD.OTF);
+}
+
+
+/*Basic reset*/
+* {margin: 0; padding: 0;}
+
+/*Estilos principales del main*/
+body {
+	font-family: pro_bold !important;
+	background: url(../images/fondo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Cuadro de acceso*/
+#LoginMain{
+    width: 22em;
+    margin: auto;
+    height: 11.6em;
+    border-radius: 0.4em;
+    padding: 10px;
+    background: url(../images/fondo_login.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#password,#username{
+    height: 48px;
+    top: 2px;
+    position: relative;
+    left: -12px;
+    padding: 10px;
+    background-color: white;
+    width: 77%;
+}
+
+#loginAccessBtn{
+    width: 93%;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    cursor: pointer;
+}
+#LoginForm{
+    margin-left:6%;
+}
+
+#LogoInfonavitPrincipal{
+    position: fixed;
+    right: 30px;
+    top: -5px;
+    width: 96px;
+}
+#iso_logo{
+    position: absolute;
+    width: 163px;
+    margin-top: -101px;
+    left: 54px;
+}
+
+.flexme{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.vertical-center {
+  min-height: 50%;  /* Fallback for vh unit */
+  min-height: 50vh; /* You might also want to use
+                        'height' property instead.
+                        
+                        Note that for percentage values of
+                        'height' or 'min-height' properties,
+                        the 'height' of the parent element
+                        should be specified explicitly.
+  
+                        In this case the parent of '.vertical-center'
+                        is the <body> element */
+
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+  
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  
+  /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+  width: 100%;
+  
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+
+
+/** Header bar **/
+
+.fixed-nav-bar {
+  position: initial;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #C0002A;
+  display:inline-block;
+}
+/** Termina header bar **/
+
+
+
+/**  Menú bar **/
+
+#accordian {
+    background: #222123;
+    width: 190px;
+    position: fixed;
+    float: left;
+    color: white;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.6), 0 0 200px 1px rgba(255, 255, 255, 0.5);
+    overflow-x: hidden;
+    opacity: .91;
+    height: calc(100% - 51px);
+    height: -o-calc(100% - 51px);
+    height: -webkit-calc(100% - 50px);
+    height: -moz-calc(100% - 51px);
+    display: block;
+    top: 50px;
+}
+
+#Left {
+    width: 189px;
+    float: left;
+    height: 100%;
+    font-family: pro_bold;
+    font-size: 40px;
+    color: white;
+}
+
+#BtnMenu {
+    width: 504px;
+    float: left;
+    height: 100%;
+    cursor: pointer;
+}
+
+#BtnMenu2{
+  width:50px;
+}
+
+#Right {
+    width: 542px;
+    position: absolute;
+    right: 0px;
+    float: right;
+    text-align: right;
+}
+
+#btnCSesion{
+  cursor:pointer;
+   width:49px;
+}
+
+#info_usuario{
+  color:white;
+}
+.ubicacion {
+    height: initial;
+    font-family: pro_bold;
+    font-size: 21px;
+    color: white;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+div#pop-up {
+    display: none;
+    position: absolute;
+    right: 0px;
+    background: #eeeeee;
+    color: white;
+    border: 1px solid #1a1a1a;
+    font-size: 90%;
+    width: 150px;
+    float: left;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px 1px, rgba(255, 255, 255, 0.498039) 0px 0px 200px 1px;
+    opacity: 0.91;
+    background: rgb(23, 81, 95);
+    overflow: hidden;
+    transition: max-height 1.4s ease-in-out 0s;
+    -webkit-transition: max-height 1.4s ease-in-out 0s;
+    min-height: 0px;
+    max-height: 51px;
+    cursor: pointer;
+    display: block;
+}
+
+#popupList{
+  margin-top: 2px;
+  margin-left: 7px;
+}
+#imgPopupList{
+  width: 21px;
+
+  margin-right: 7px;
+}
+.lblPopupList{
+ /* margin-top: 11px;
+  margin-left: -10px;
+  padding-top: 3px;*/
+  height: 24px;
+  width: 150px;
+}
+/** Termina menu bar **/
+
+
+/** Inicia contenedor **/
+
+.contenedor {
+    background: white;
+    min-height: 40em;
+    float: right;
+    width: calc(95% - 190px);
+    width: -o-calc(95% - 190px);
+    width: -webkit-calc(95% - 190px);
+    width: -moz-calc(95% - 190px);
+    height: calc(94% - 51px);
+    height: -o-calc(94% - 51px);
+    height: -webkit-calc(94% - 51px);
+    height: -moz-calc(94% - 51px);
+    margin-right: 33px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden; 
+    width: 80%;
+}
+
+/** Termina contenedor  **/
+
+
+
+
+
+

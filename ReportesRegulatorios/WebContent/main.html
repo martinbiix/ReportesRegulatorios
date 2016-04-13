@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+
+  <title>CEDEVIS</title>
+  <meta name="keywords" content="HTML5 Bootstrap 3">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/theme.css">
+
+  <!-- Admin Forms CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/admin-forms.css">
+
+  <!-- Favicon 
+  <link rel="shortcut icon" href="favicon.ico">
+  -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="dashboard-page sb-l-o sb-r-c onload-check" style="min-height: 693px;">
+
+<!-------------------------------------------------------------+ 
+  <body> Helper Classes: 
+---------------------------------------------------------------+ 
+  '.sb-l-o' - Sets Left Sidebar to "open"
+  '.sb-l-m' - Sets Left Sidebar to "minified"
+  '.sb-l-c' - Sets Left Sidebar to "closed"
+
+  '.sb-r-o' - Sets Right Sidebar to "open"
+  '.sb-r-c' - Sets Right Sidebar to "closed"
+---------------------------------------------------------------+
+ Example: <body class="example-page sb-l-o sb-r-c">
+ Results: Sidebar left Open, Sidebar right Closed
+--------------------------------------------------------------->
+
+<!-- Start: Main -->
+<div id="main">
+
+  <!-----------------------------------------------------------------+
+     ".navbar" Helper Classes:
+  -------------------------------------------------------------------+
+     * Positioning Classes:
+      '.navbar-static-top' - Static top positioned navbar
+      '.navbar-static-top' - Fixed top positioned navbar
+
+     * Available Skin Classes:
+       .bg-dark    .bg-primary   .bg-success
+       .bg-info    .bg-warning   .bg-danger
+       .bg-alert   .bg-system
+  -------------------------------------------------------------------+
+    Example: <header class="navbar navbar-fixed-top bg-primary">
+    Results: Fixed top navbar with blue background
+  ------------------------------------------------------------------->
+
+  <!-- Start: Header -->
+  <header class="navbar navbar-fixed-top navbar-shadow bg-danger">
+
+    <!-- Barra izquierda  titulo-->
+    <div class="navbar-branding dark bg-danger">
+      <a class="navbar-brand" href="#" id="LblTituloApp">
+        <b>CEDEVIS</b>
+      </a>
+      <span id="toggle_sidemenu_l" class="fa fa-align-justify"></span>
+    </div>
+
+
+    <!-- Barra de ubicación -->
+    <ul class="nav navbar-nav navbar-left" id="LblUbicacion">
+            <ol class="breadcrumb" style="top: 12px;">
+              <li class="crumb-icon">
+                <a href="#">
+                  <span class="glyphicon glyphicon-home" id="IconUbicacion"></span>
+                </a>
+              </li>
+              <li class="crumb-active">
+                <a href="#">Dashboard</a>
+              </li>
+              <li class="crumb-trail">
+                <a href="#">Dashboard</a>
+              </li>
+              <li class="crumb-trail2">
+                <a href="#">Dashboard</a>
+              </li>
+            </ol>
+    </ul>
+
+
+    <!-- Barra derecha 
+     <li class="list-group-item">
+            <a href="#" class="animated animated-short fadeInUp">
+              <span class="fa fa-gear"></span> Configuración </a>
+          </li>
+          -->
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown menu-merge">
+        <a href="#" class="dropdown-toggle fw700 p15" data-toggle="dropdown">
+          <img src="./assets/images/perfil.jpg" alt="avatar" class="mw30 br64" id="UserInfoPhoto">
+          <span class="hidden-xs pl15 pr5" id="UserInfoName">Administrador </span>
+          <span class="fa fa-angle-down hidden-xs"></span>
+        </a>
+        <ul class="dropdown-menu list-group dropdown-persist w199" role="menu">
+          <li class="list-group-item">
+            <a href="#" class="animated animated-short fadeInUp">
+              <span class="fa fa-key"></span>
+              Cambiar contraseña
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a  href="#" class="" id="CerrarSesion">
+              <span class="fa fa-close"></span>
+              Cerrar Sesión 
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <!-- End: Header -->
+
+  <!-----------------------------------------------------------------+
+     "#sidebar_left" Helper Classes:
+  -------------------------------------------------------------------+
+     * Positioning Classes:
+      '.affix' - Sets Sidebar Left to the fixed position
+
+     * Available Skin Classes:
+       .sidebar-dark (default no class needed)
+       .sidebar-light
+       .sidebar-light.light
+  -------------------------------------------------------------------+
+     Example: <aside id="sidebar_left" class="affix sidebar-light">
+     Results: Fixed Left Sidebar with light/white background
+  ------------------------------------------------------------------->
+
+  <!-- Start: Sidebar -->
+  <aside id="sidebar_left" class="nano nano-light affix sidebar-default has-scrollbar">
+
+    <!-- Start: Sidebar Left Content -->
+    <div class="sidebar-left-content nano-content" tabindex="0" style="margin-right: -17px;">
+
+      <!-- Start: Sidebar Header -->
+      <header class="sidebar-header">
+
+        <!-- Sidebar Widget - Menu (slidedown) -->
+        <div class="sidebar-widget menu-widget">
+          <div class="row text-center mbn">
+            <div class="col-xs-4">
+              <a href="#" class="text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dashboard">
+                <span class="glyphicon glyphicon-home"></span>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="text-info" data-toggle="tooltip" data-placement="top" title="" data-original-title="Messages">
+                <span class="glyphicon glyphicon-inbox"></span>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="text-alert" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tasks">
+                <span class="glyphicon glyphicon-bell"></span>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="text-system" data-toggle="tooltip" data-placement="top" title="" data-original-title="Activity">
+                <span class="fa fa-desktop"></span>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="" data-original-title="Settings">
+                <span class="fa fa-gears"></span>
+              </a>
+            </div>
+            <div class="col-xs-4">
+              <a href="#" class="text-warning" data-toggle="tooltip" data-placement="top" title="" data-original-title="Cron Jobs">
+                <span class="fa fa-flask"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Widget - Search (hidden) -->
+        <div class="sidebar-widget search-widget hidden">
+          <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-search"></i>
+              </span>
+            <input type="text" id="sidebar-search" class="form-control" placeholder="Search...">
+          </div>
+        </div>
+
+      </header>
+      <!-- End: Sidebar Header -->
+
+      <!-- Start: Sidebar Menu -->
+      <ul class="nav sidebar-menu">
+        <li class="sidebar-label">Usuario</li>
+        <li>
+          <a class="accordion-toggle" href="#">
+            <span class="glyphicon glyphicon-fire"></span>
+            <span class="sidebar-title">Sección</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="nav sub-nav">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-book"></span> Elemento 1 </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-modal-window"></span> Elemento 2 </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-equalizer"></span> Elemento 3 </a>
+            </li>
+          </ul>
+        </li>
+
+         <li class="sidebar-label">Administrador</li>
+        <li>
+          <a class="accordion-toggle" href="#">
+            <span class="glyphicon glyphicon-fire"></span>
+            <span class="sidebar-title">Configuración</span>
+            <span class="caret"></span>
+          </a>
+          <ul class="nav sub-nav">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-book"></span> Elemento 1 </a>
+            </li>
+          </ul>
+          </li>
+
+      </ul>
+      <!-- End: Sidebar Menu -->
+
+      <!-- Start: Sidebar Collapse Button -->
+      <div class="sidebar-toggle-mini">
+        <a href="#">
+          <span class="fa fa-sign-out"></span>
+        </a>
+      </div>
+      <!-- End: Sidebar Collapse Button -->
+    </div>
+    <!-- End: Sidebar Left Content -->
+  <div class="nano-pane">
+    <div class="nano-slider" style="height: 305px; transform: translate(0px, 0px);"></div>
+  </div>
+</aside>
+  <!-- End: Sidebar Left -->
+
+  <!-- Start: Content-Wrapper -->
+  <section id="content_wrapper">  
+    <!-- Begin: Content -->
+    <section id="content" class="table-layout contentStyle">
+        Section 2
+
+    </section>
+  </section>
+  <!-- End: Content-Wrapper -->
+</div>
+<!-- End: Main -->
+
+
+<!-- BEGIN: PAGE SCRIPTS -->
+
+<!-- jQuery -->
+<script src="./assets/libs/jquery-1.11.1.min.js"></script>
+<script src="./assets/libs/jquery-ui.min.js"></script>
+
+<!-- Simple Circles Plugin -->
+<script src="./assets/libs/circles.js"></script>
+
+<!-- JvectorMap Plugin + US Map (more maps in plugin/assets folder) -->
+<script src="./assets/libs/jquery.jvectormap.min.js"></script>
+<script src="./assets/libs/jquery-jvectormap-us-lcc-en.js"></script>
+
+<!-- Bootstrap Tabdrop Plugin -->
+<script src="./assets/libs/bootstrap-tabdrop.js"></script>
+
+<!-- Charts JS -->
+<!--<script src="vendor/plugins/highcharts/highcharts.js"></script>-->
+<!--<script src="vendor/plugins/circles/circles.js"></script>-->
+
+<!-- FullCalendar Plugin + moment Dependency -->
+<script src="./assets/libs/moment.min.js"></script>
+
+<!-- Theme Javascript -->
+<script src="./assets/libs/utility.js"></script>
+<script src="./assets/js/demo.js"></script>
+<script src="./assets/js/main.js"></script>
+
+
+
+<!-- Widget Javascript -->
+<script src="./assets/libs/widgets.js"></script>
+  <script type="text/javascript">
+  jQuery(document).ready(function() {
+
+    "use strict";
+
+    // Init Theme Core    
+    Core.init();
+
+    // Init Demo JS  
+    Demo.init();
+
+    $('.admin-panels').adminpanel({
+      grid: '.admin-grid',
+      draggable: true,
+      mobile: false,
+      callback: function() {
+        bootbox.confirm('<h3>A Custom Callback!</h3>', function() {});
+      },
+      onFinish: function() {
+        $('.admin-panels').addClass('animated fadeIn').removeClass('fade-onload');
+
+        // Init Demo settings 
+        $('#p0 .panel-control-color').click();
+
+        // Init Demo settings 
+        $('#p1 .panel-control-title').click();
+
+        // Create an example admin panel filter
+        $('#admin-panel-filter a').on('click', function() {
+          var This = $(this);
+          var Value = This.attr('data-filter');
+
+          // Toggle any elements whos name matches
+          // that of the buttons attr value
+          $('.admin-filter-panels').find($(Value)).each(function(i, e) {
+            if (This.hasClass('active')) {
+              $(this).slideDown('fast').removeClass('panel-filtered');
+            } else {
+              $(this).slideUp().addClass('panel-filtered');
+            }
+          });
+          This.toggleClass('active');
+        });
+
+      },
+      onSave: function() {
+        $(window).trigger('resize');
+      }
+    });
+  
+  });
+  </script>
+  <script src="./assets/js/app/main.js"></script>
+
+  <!-- END: PAGE SCRIPTS -->
+<div class="jvectormap-label"></div>
+</body>
+</html>

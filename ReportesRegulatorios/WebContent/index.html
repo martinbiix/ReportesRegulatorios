@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="MainHTML">
+	<head>
+		<title>WebLogin</title>
+		<meta chatset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Estilos -->
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		
+		<link rel="stylesheet" href="assets/css/theme.css">
+ 		<link rel="stylesheet" href="assets/css/jquery.custom-scrollbar.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/theme.css">
+
+  <!-- Admin Forms CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/admin-forms.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+
+		<script src="assets/libs/jquery-1.12.0.min.js"></script>	
+		<script src="assets/libs/jquery.validate.min.js"></script>
+		<script src="assets/libs/extendValidate.js"></script>	
+		<script src="assets/libs/md5.js"></script>
+		<script src="assets/libs/jquery.custom-scrollbar.js"></script>
+		<script src="assets/libs/utility.js"></script>
+		<!-- Scripts  de la App-->
+		<script src="assets/js/app/PublicM.js"></script>
+		<script src="assets/js/app/ContenedorLogin.js"></script>
+		<script src="assets/js/app/app.js"></script>
+
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+	</head>
+	<body>
+		<div id="PrincipalIndex">
+			<!-- Main -->
+		</div>
+
+
+		<script type="text/javascript">
+			var modalSource = '<div class="modal fade in" id="source-modalM" tabindex="-1" role="dialog" data-backdrop="static" '+
+			'data-keyboard="false" aria-hidden="false" style="padding-right: 17px;"><div class="modal-backdrop fade'+
+			' in"></div> <div class="modal-dialog modal-lg" style="'+
+    		'width: 11em;'+
+			'"> <div class="modal-content"><img src="assets/images/loader.png" style=" '+
+			'width: 11em;'+
+			'"></div> </div> </div>';
+		    $('body').append(modalSource);
+			$('<a data-toggle="modal" href="#source-modalM" id="openMM" style="visibility:hidden;">Open Modal</a>').appendTo('body');
+
+			  //$("#openMM").click();
+
+			  var tiempo=0;
+			  function movesItem() {
+			    $( ".modal-content").css( "background", "linear-gradient(0deg, red 0%, #FFFFFF "+tiempo+"%)" );
+			    tiempo+=20;
+			    if(tiempo>=120){
+			      tiempo=0;
+			    }
+			  }  
+			  setInterval(movesItem, 2000);
+
+		</script>
+	</body>
+</html>
